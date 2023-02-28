@@ -4,7 +4,8 @@ on:
   push:
     tags: ['v*']
 
-  workflow_dispatch:
+env:
+  FULL_IMAGE_NAME: malacration/operator-logsearchapi
 
 jobs:
   push_to_registry:
