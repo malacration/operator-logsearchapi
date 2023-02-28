@@ -44,7 +44,7 @@ jobs:
       - name: build and push docker image
         uses: docker/build-push-action@v3.2.0
         with:
-          context: ./logsearchapi/Dockerfile
+          context: ./logsearchapi/
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
