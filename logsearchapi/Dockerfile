@@ -3,7 +3,7 @@
 #
 FROM golang:1.19.3-buster as builder
 RUN mkdir /build
-ADD src/* /build/
+ADD logsearchapi/* /build/
 WORKDIR /build
 
 ARG OWNER=Andrew
